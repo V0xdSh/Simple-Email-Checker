@@ -15,6 +15,6 @@ data = json.load(response)
 details=data['details']
 
 if details == "The mailbox exists.":
-    print("Email Exist !")
+    print("True!")
 else:
-    print("nope!")
+    print("False!")
