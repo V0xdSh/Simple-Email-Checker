@@ -5,16 +5,17 @@ from urllib.request import urlopen
 Simple Email Checker
 '''
 
-email_checker = input("Email : ")
+email = input("Email : ")
 
-key = "" #ApiKey
+key = "YdJMzmBP6hkHxQsWcjwbZT8nLf7rVFUq" #ApiKey
 
-url = "https://emailverifierapi.com/v2/?apiKey=" + key + "&email=" + email_checker
+url = "https://emailverifierapi.com/v2/?apiKey=" + key + "&email=" + email
+
 response = urlopen(url)
 data = json.load(response)
 details=data['details']
 
 if details == "The mailbox exists.":
-    print("True!")
+    print("True Email!")
 else:
-    print("False!")
+    print("Fake Email!")
