@@ -7,7 +7,7 @@ Simple Email Checker
 
 email = input("Email : ")
 
-key = "IhuPynxZSqjfvX8T0e2cFkAa65gYVGMK"
+key = "42kBeXMfTvQKyJugsh8ULRC6VGcYrm5D"
 
 url = "https://emailverifierapi.com/v2/?apiKey=" + key + "&email=" + email
 
